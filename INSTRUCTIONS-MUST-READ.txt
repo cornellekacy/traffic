@@ -1,0 +1,16 @@
+===============================
+*~*INSTALLATION INSTRUCTIONS*~*
+===============================
+
+Extract it in your hosting. After that run installing.php to install it.
+
+Before this you need to make new database and username.
+
+Insert name of database, username and password for your database,
+insert your username and pass for loggin and that is it regarding installation.
+
+Login with you username and pass and you are ready to share your traffic to your other web sites.
+
+Enjoy!
+
+=============================================

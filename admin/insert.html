@@ -1,0 +1,57 @@
+<div style="width:720px; height:300px; -moz-border-radius:15px; -webkit-border-radius:15px; background-image:url(../source/piks.png); background-repeat:repeat; padding:10px;"><table width="100%" border="0" align="center">
+  <tr>
+    <td height="41" align="left" valign="top"><p class="neslov">TRAFFIC MONSTER Settings<br>
+      please select how many engines you want
+    ( max: 4 )</p></td>
+  </tr>
+  <tr>
+    <td height="184" align="left" valign="top"><form name="insertenginess" id="insertenginess" method="post" action="">
+      <p>
+        <label for="brojengine">Engines</label>
+        <select onChange="generateEngines()" id="brojengine">
+		  <option value="0" selected>Select option</option>
+          <option value="1">One Engine</option>
+          <option value="2">Two Engines</option>
+          <option value="3">Tree Engines</option>
+          <option value="4">Four Engines</option>
+        </select>
+      </p>
+      <div id="textArea"> </div></p>
+        <input type="submit" name="insertengine" onClick="return checkvalues()" id="insertengine" value="INSERT ENGINES" />
+    </form></td>
+  </tr>
+</table></table></div>
+<script type="text/javascript">
+var NoOfEngines=document.getElementById("brojengine");
+var textArea=document.getElementById("textArea");
+var ubaciih=document.getElementById("insertengine");
+ubaciih.style.display="none";
+
+textArea.innerHTML="Please select how many engines you want to share your traffic!"
+	
+
+function generateEngines(){
+var selected=NoOfEngines.options[NoOfEngines.selectedIndex].value;
+var selected_text=NoOfEngines.options[NoOfEngines.selectedIndex].text;
+
+
+if(selected!=0){
+	i=0;
+	textArea.innerHTML=" "+ selected_text+" is selected </br></br>";
+	var forma=document.getElementById("insertenginess");
+	forma.action="index.php?number="+selected;
+	
+	//da napravi izabrani broj polja
+	while(i<selected){
+		numnow=i+1;
+		textArea.innerHTML+="<label for='EngineBroj"+numnow+"'>Engine "+numnow+"</label><input type='text' name='EngineBroj"+numnow+"' id='EngineBroj"+numnow+"' value='' size='50'>  Please enter URL here ( without http:// )</br>";
+		ubaciih.style.display="block";
+		i++;
+		};
+	}else{
+		ubaciih.style.display="none";
+		textArea.innerHTML="Please select how many engines you want to share your traffic!";
+		}
+
+};	
+</script>

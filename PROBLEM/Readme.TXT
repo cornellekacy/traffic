@@ -1,0 +1,1 @@
+If login doesn't work change existing checklogin.php with this one in admin folder.

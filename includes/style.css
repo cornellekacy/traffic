@@ -1,0 +1,71 @@
+a:link {color:#FFF;}      /* unvisited link */
+a:visited {color:#FFF;}  /* visited link */
+a:hover {color:#FF0000;}  /* mouse over link */
+a:active {color:#FF0000;}  /* selected link */
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
+body,td,th {
+	color: #FFF;
+}
+body {
+	background-color: #000;
+}
+.naslov{
+	font-family: 'green Energy';
+	font-size: 36px;
+	font-weight: bold;
+	color: #FF0;
+	}
+.content{
+	font-family: DIN, 'DIN Alternate', 'DIN Black', 'DIN BlackAlternate', 'DIN Schablonierschrift', 'DIN Light';
+	color: #FFF;
+	background-image: url(../source/Untitled-2.png);
+	background-repeat: repeat-y;
+	min-height:350px;
+	}
+.count{
+	font-family: DIN, 'DIN Alternate', 'DIN Black', 'DIN BlackAlternate', 'DIN Schablonierschrift', 'DIN Light';
+	color: #F00;
+	font-size: 18px;
+	}
+.header{
+	background-image: url(../source/Untitled-3.jpg);
+	}
+.logintable{
+	height: 284px;
+	width: 350px;
+	background-image: url(../source/Login.png);
+	
+	}
+.header-admin{
+	background-image:url(../source/admin-head.png);
+	height:200px;
+	max-width:1400px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	}
+.admin-cont{
+	background-image:url(../source/donjideo.png);
+	height:560px;
+	max-width:1400px;
+	font-family: DIN, "DIN Alternate", "DIN Black", "DIN BlackAlternate", "DIN Schablonierschrift", "DIN Light";
+	}
+.gc_now{
+	width:auto; 
+	height:201px;
+	padding:10px;
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px;
+	}.logout {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	z-index: 1;
+	right: 800px;
+}
